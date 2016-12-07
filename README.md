@@ -9,7 +9,7 @@
 
  used only native controllers
 
- simple code
+ Single line code
 
  easy to use
 
