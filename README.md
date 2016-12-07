@@ -1,7 +1,7 @@
-# AlertView-and-ActionSheet-for-all-iOS-version-with-handler
+# AlertView and ActionSheet for iOS 6 to iOS 10 version with action handler
 
 
-<title>AlertView and ActionSheet for all iOS version with action handler</title>
+<title>AlertView and ActionSheet for iOS 6 to iOS 10 version with action handler</title>
 
 <br>
 
