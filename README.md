@@ -33,7 +33,7 @@ For <b>alert view</b> use the following method for showing alert and if you need
     }];``
 
 
-For <b>action sheet</b> use the following method for showing alert and if you need to get the action of an alert pass actionHandler.
+For <b>action sheet</b> use the following method for showing action sheet and if you need to get the action of an action sheet pass actionHandler.
 
 ```[[Singleton sharedInstance] showActionSheetWithTitle:@"action title" arrayOfOtherButtonTitles:@[@"OK"] cancelButtonTitle:@"cancel" presentInViewController:self actionHandler:^(NSString * _Nonnull buttonTitle, NSInteger buttonIndex) {
       NSLog(@"button action %d %@",(int)buttonIndex,buttonTitle);
