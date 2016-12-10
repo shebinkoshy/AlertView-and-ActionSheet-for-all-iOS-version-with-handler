@@ -105,15 +105,14 @@
 
 -(void)alertButtonActionsWithButtonIndex:(NSInteger)buttonIndex withButtonTitle:(NSString*)buttonTitle actionHandler:(id)actionHandler
 {
-    
+    [_arrayAlertActionHandlers removeLastObject];
     if (actionHandler && [actionHandler isKindOfClass:[NSNull class]] == NO)
     {
         void (^blockName)(NSString * buttonTitle1, NSInteger buttonIndex1) = actionHandler;
         {
             blockName(buttonTitle,buttonIndex);
         };
-    }
-    [_arrayAlertActionHandlers removeLastObject];
+    }    
 }
 
 
@@ -212,14 +211,14 @@
 
 -(void)actionButtonActionsWithButtonIndex:(NSInteger)buttonIndex withButtonTitle:(NSString*)buttonTitle actionHandler:(id)actionHandler
 {
+    [_arrayActionSheetActionHandlers removeLastObject];
     if (actionHandler && [actionHandler isKindOfClass:[NSNull class]] == NO)
     {
         void (^blockName)(NSString * buttonTitle1, NSInteger buttonIndex1) = actionHandler;
         {
             blockName(buttonTitle,buttonIndex);
         };
-    }
-    [_arrayActionSheetActionHandlers removeLastObject];
+    }    
 }
 
 #pragma mark - UIActionSheet delegate (iOS 7.0)
